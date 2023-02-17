@@ -1,10 +1,10 @@
-const baseURL = "https://developers.themoviedb.org/3";
+const moviesBaseURL = 'https://api.themoviedb.org/3'
 
 const urls = {
-
+    genres: '/genre/movie/list'
 }
 
 export {
-    baseURL,
+    moviesBaseURL,
     urls
 }

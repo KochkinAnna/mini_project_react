@@ -1,3 +1,5 @@
+export * from './Genre/Genre';
+export * from './Genres/Genres';
 export * from './GenreBadge/GenreBadge';
 export * from './Header/Header';
 export * from './MovieInfo/MovieInfo';
