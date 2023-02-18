@@ -1,5 +1,4 @@
 import {useEffect} from "react";
-import {genresService} from "../../services";
 import {useDispatch, useSelector} from "react-redux";
 import {genresActions} from "../../redux";
 import {Genre} from "../Genre/Genre";
@@ -8,16 +7,18 @@ const Genres = () => {
 
     const dispatch = useDispatch();
 
-    const {genres} = useSelector(state => state.genres);
+    const {genres,errors,loading} = useSelector(state => state.genres);
 
     useEffect(() => {
-        genresService.getAll().then(({data}) => dispatch(genresActions.getGenres(data)))
+        dispatch(genresActions.getGenres())
     }, [dispatch])
 
     console.log(genres);
 
     return (
         <div>
+            {errors&& JSON.stringify(errors)}
+            {loading&& <h3>Loading...</h3>}
             {genres.map(genre => <Genre key={genre.id} genre={genre}/>)}
         </div>
     );
