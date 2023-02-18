@@ -13,8 +13,6 @@ const Genres = () => {
         dispatch(genresActions.getGenres())
     }, [dispatch])
 
-    console.log(genres);
-
     return (
         <div>
             {errors&& JSON.stringify(errors)}

@@ -1,9 +1,12 @@
-import {MoviesListCard} from "../../components";
+import {GenreBadge, MovieInfo, PosterPreview, StarsRating} from "../../components";
 
 const MoviePage = () => {
     return (
         <div>
-            <MoviesListCard/>
+            <PosterPreview/>
+            <StarsRating/>
+            <MovieInfo/>
+            <GenreBadge/>
         </div>
     );
 };
