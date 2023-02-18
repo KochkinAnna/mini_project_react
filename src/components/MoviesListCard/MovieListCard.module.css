@@ -1,0 +1,13 @@
+.MovieListCard {
+    width: 250px;
+    height: 550px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    margin: 10px;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}

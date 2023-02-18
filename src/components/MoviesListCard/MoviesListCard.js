@@ -1,18 +1,17 @@
-import {PosterPreview} from "../PosterPreview/PosterPreview";
 import {StarsRating} from "../StarsRating/StarsRating";
 import {GenreBadge} from "../GenreBadge/GenreBadge";
+
+import css from './MovieListCard.module.css'
 
 const MoviesListCard = ({movie}) => {
 
     const {original_title, poster_path} = movie;
 
     return (
-        <div>
+        <div className={css.MovieListCard}>
             <div>
                 <img src={'https://image.tmdb.org/t/p/w500' + poster_path} alt={original_title}/>
             </div>
-
-            <PosterPreview/>
             <StarsRating/>
             <GenreBadge/>
 
