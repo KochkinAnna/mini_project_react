@@ -7,7 +7,6 @@ const Header = () => {
             <NavLink to={''}>HOME</NavLink>
             <NavLink to={'movies'}>MOVIES</NavLink>
             <NavLink to={'genres'}>GENRES</NavLink>
-            <NavLink to={'search'}>SEARCH</NavLink>
         </div>
     );
 };

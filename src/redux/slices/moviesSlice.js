@@ -3,6 +3,8 @@ import {moviesService} from "../../services";
 
 const initialState = {
     movies: [],
+    prev:null,
+    next:null,
     errors: null,
     loading: null
 }

@@ -3,4 +3,5 @@
     box-sizing: border-box;
     flex-wrap: wrap;
     justify-content: center;
+    height: 100%;
 }

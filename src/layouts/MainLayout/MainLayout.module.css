@@ -1,4 +1,59 @@
+html {
+    background-image: url(https://i.pinimg.com/564x/86/b2/ba/86b2bae7b842e55c91098117332898fb.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
 .MainLayout {
     display: flex;
     box-sizing: border-box;
+    justify-content: center;
 }
+
+.top {
+    height: 80px;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+}
+
+.webtitle{
+    width: 300px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.owufilm{
+    text-align: center;
+    font-size: 30px;
+    color: #75603d;
+    padding-left: 5px;
+    padding-top: 26px;
+}
+
+.usertitle{
+    width: 300px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 10px;
+}
+
+.userlogo{
+    height: 40px;
+    width: 40px;
+}
+.background {
+    width: 80%;
+    height: 100%;
+    margin-top: 50px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    background: snow;
+}
+

@@ -17,6 +17,7 @@ const MoviesList = () => {
 
     return (
         <div>
+            
             {errors&& JSON.stringify(errors)}
             {loading&& <h3>Loading...</h3>}
 
