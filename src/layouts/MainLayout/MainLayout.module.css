@@ -23,6 +23,7 @@ html {
     width: 300px;
     display: flex;
     box-sizing: border-box;
+    padding-left: 10px;
 }
 
 .owufilm{

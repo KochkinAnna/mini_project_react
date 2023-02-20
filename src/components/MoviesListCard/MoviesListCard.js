@@ -2,12 +2,14 @@ import {StarsRating} from "../StarsRating/StarsRating";
 import {GenreBadge} from "../GenreBadge/GenreBadge";
 
 import css from './MovieListCard.module.css'
+import {Link} from "react-router-dom";
 
 const MoviesListCard = ({movie}) => {
 
-    const {original_title, poster_path, vote_average} = movie;
+    const {id, original_title, poster_path, vote_average} = movie;
 
     return (
+        <Link to={`${id}`}>
         <div className={css.MovieListCard}>
             <div>
                 <img src={'https://image.tmdb.org/t/p/w500' + poster_path} alt={original_title}/>
@@ -16,8 +18,8 @@ const MoviesListCard = ({movie}) => {
             <GenreBadge/>
 
             <div className={css.title}>{original_title}</div>
-            <hr/>
         </div>
+            </Link>
     );
 };
 

@@ -1,4 +1,4 @@
-import {Header, UserInfo} from "../../components";
+import {Header, SearchForm, UserInfo} from "../../components";
 import {Outlet} from "react-router-dom";
 
 import css from './MainLayout.module.css';
@@ -12,17 +12,17 @@ const MainLayout = () => {
 
                 <div className={css.top}>
                     <div className={css.webtitle}>
-                    <div>
-                        <img src={'https://i.pinimg.com/564x/d4/a1/17/d4a117312abaa77cf02f5616424d9512.jpg'}
-                             alt={'bird_logo'}/>
-                    </div>
-                    <div className={css.owufilm}>
-                        <b>OWU FILM</b>
-                    </div>
+                        <div>
+                            <img src={'https://i.pinimg.com/564x/d4/a1/17/d4a117312abaa77cf02f5616424d9512.jpg'}
+                                 alt={'bird_logo'}/>
+                        </div>
+                        <div className={css.owufilm}>
+                            <b>OWU FILMS</b>
+                        </div>
                     </div>
 
                     <div>
-                        INPUT
+                        <SearchForm/>
                     </div>
 
                     <div className={css.usertitle}>
@@ -31,7 +31,7 @@ const MainLayout = () => {
                                  alt={'user_logo'}/>
                         </div>
                         <div>
-                        <UserInfo/>
+                            <UserInfo/>
                         </div>
                     </div>
                 </div>

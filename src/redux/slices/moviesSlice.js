@@ -9,7 +9,7 @@ const initialState = {
 }
 
 const getMovies = createAsyncThunk(
-    'genresSlice/getGenres',
+    'moviesSlice/getMovies',
     async ({page}, {rejectWithValue}) => {
         try {
             const {data} = await moviesService.getAll(page);
@@ -19,6 +19,7 @@ const getMovies = createAsyncThunk(
         }
     }
 )
+
 
 const moviesSlice = createSlice({
     name: 'moviesSlice',
@@ -39,6 +40,7 @@ const moviesSlice = createSlice({
             .addCase(getMovies.pending, (state) => {
                 state.loading = true
             })
+
 });
 
 const {reducer: moviesReducer} = moviesSlice;

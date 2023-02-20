@@ -33,7 +33,7 @@ const MoviesList = () => {
                         onClick={() => setQuery(query => ({page: +query.get('page') - 1}))}>prev</button>
                 <div>- {page} -</div>
                 <button disabled={page === 500}
-                        onClick={() => setQuery(query => ({page: +query.get('page') + 2}))}>next</button>
+                        onClick={() => setQuery(query => ({page: +query.get('page') + 1}))}>next</button>
             </div>
         </div>
     );
