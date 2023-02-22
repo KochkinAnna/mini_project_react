@@ -16,7 +16,9 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.8.1",
     "react-scripts": "5.0.1",
-    "react-youtube": "^10.1.0"
+    "react-star-rating-element": "^1.0.7",
+    "react-star-ratings": "^2.3.0"
+
   },
   "scripts": {
     "start": "react-scripts start",

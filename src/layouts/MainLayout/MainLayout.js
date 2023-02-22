@@ -1,4 +1,4 @@
-import {Header, UserInfo} from "../../components";
+import {Header, SearchBar, UserInfo} from "../../components";
 import {Outlet} from "react-router-dom";
 
 import css from './MainLayout.module.css';
@@ -19,6 +19,10 @@ const MainLayout = () => {
                         <div className={css.owufilm}>
                             <b>OWU FILMS</b>
                         </div>
+                    </div>
+
+                    <div>
+                        <SearchBar/>
                     </div>
 
 

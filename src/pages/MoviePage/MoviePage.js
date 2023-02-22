@@ -1,4 +1,4 @@
-import {GenreBadge, MovieInfo, PosterPreview, StarsRating, Videos} from "../../components";
+import {MovieInfo, PosterPreview, Videos} from "../../components";
 import {useParams} from "react-router-dom";
 
 import css from './MoviePage.module.css'
@@ -10,8 +10,6 @@ const MoviePage = () => {
             <div className={css.info}>
                 <div>
                     <PosterPreview movieId={movieId}/>
-                    <StarsRating movieId={movieId}/>
-                    <GenreBadge movieId={movieId}/>
                 </div>
                 <div className={css.MovieInfo}>
                     <MovieInfo movieId={movieId}/>

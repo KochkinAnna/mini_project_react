@@ -5,7 +5,6 @@ const initialState = {
     genres: [],
     errors: null,
     loading: null
-    // selectedGenre:null
 }
 
 const getGenres = createAsyncThunk(
@@ -44,7 +43,6 @@ const {reducer: genresReducer} = genresSlice;
 
 const genresActions = {
     getGenres
-    // getById
 }
 
 export {

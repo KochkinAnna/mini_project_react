@@ -17,7 +17,7 @@ const MovieInfo = ({movieId}) => {
             <div className={css.MovieInfo}>
                 <div className={css.title}><b>{movie.title}</b></div>
                 <div><b>release date:</b> {movie.release_date}</div>
-                <div><b>vote average:</b> {movie.vote_average}</div>
+                <div><b>rating:</b> {movie.vote_average}</div>
                 <div><b>original language:</b> {movie.original_language}</div>
                 <div><b>genre:</b> {movie.genre_ids}</div>
                 <hr/>

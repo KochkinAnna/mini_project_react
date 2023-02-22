@@ -9,6 +9,19 @@
     text-decoration: none;
 }
 
+.container{
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.topright{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    margin-right: -15px;
+}
+
 img{
     width: 100%;
     height: 100%;
