@@ -9,17 +9,21 @@ const Genres = () => {
 
     const dispatch = useDispatch();
 
-    const {genres,errors,loading} = useSelector(state => state.genres);
+    const {genres, errors, loading} = useSelector(state => state.genres);
 
     useEffect(() => {
         dispatch(genresActions.getGenres())
     }, [dispatch])
 
+
     return (
-        <div className={css.Genres}>
-            {errors&& JSON.stringify(errors)}
-            {loading&& <h3>Loading...</h3>}
-            {genres.map(genre => <Genre key={genre.id} genre={genre}/>)}
+        <div>
+            <div className={css.Genres}>
+                {errors && JSON.stringify(errors)}
+                {loading && <h3>Loading...</h3>}
+                {genres.map(genre => <Genre key={genre.id} genre={genre}/>)}
+            </div>
+
         </div>
     );
 };

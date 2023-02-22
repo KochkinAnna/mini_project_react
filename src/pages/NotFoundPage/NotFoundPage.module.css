@@ -1,0 +1,17 @@
+.NotFoundPage{
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
+    color: snow;
+    flex-direction: column;
+    margin-top: 300px;
+    font-size: 40px;
+    margin-left: 30px;
+}
+
+.buttonn{
+    width: 200px;
+    height: 30px;
+    margin-top: 20px;
+    margin-left: -3px;
+}

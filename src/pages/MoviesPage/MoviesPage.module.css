@@ -1,0 +1,12 @@
+.MoviesPage{
+    display: flex;
+    box-sizing: border-box;
+}
+
+.Genres{
+    width: 10%;
+}
+
+.MoviesList{
+    width: 89%;
+}

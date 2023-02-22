@@ -21,11 +21,6 @@ const MainLayout = () => {
                         </div>
                     </div>
 
-                    <div>
-                        <SearchBar/>
-                    </div>
-
-
                     <div className={css.usertitle}>
                         <div className={css.userlogo}>
                             <img src={'https://i.pinimg.com/564x/e5/30/92/e53092d84abcf2b22f633ce67f285d46.jpg'}
