@@ -20,18 +20,6 @@ const getGenres = createAsyncThunk(
     }
 )
 
-// const getById = createAsyncThunk(
-//     'genresSlice/getById',
-//     async ({id}, {rejectWithValue}) => {
-//         try {
-//             const {data} = await genresService.getById(id);
-//             return data.genres
-//         } catch (e) {
-//             return rejectWithValue(e.response.data)
-//         }
-//     }
-// )
-
 
 const genresSlice = createSlice({
     name: 'genresSlice',
@@ -50,10 +38,6 @@ const genresSlice = createSlice({
             .addCase(getGenres.pending, (state) => {
                 state.loading = true
             })
-            // .addCase(getById.fulfilled, (state, action) => {
-            //     state.loading = false
-            //     state.selectedGenre = action.payload
-            // })
 });
 
 const {reducer: genresReducer} = genresSlice;

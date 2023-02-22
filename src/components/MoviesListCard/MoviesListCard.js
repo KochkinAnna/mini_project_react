@@ -14,8 +14,11 @@ const MoviesListCard = ({movie}) => {
             <div>
                 <img src={'https://image.tmdb.org/t/p/w500' + poster_path} alt={original_title}/>
             </div>
+
+            <div className={css.stars_badge}>
             <StarsRating vote_average={vote_average}/>
             <GenreBadge/>
+            </div>
 
             <div className={css.title}>{original_title}</div>
         </div>

@@ -1,4 +1,4 @@
-import {Header, SearchForm, UserInfo} from "../../components";
+import {Header, UserInfo} from "../../components";
 import {Outlet} from "react-router-dom";
 
 import css from './MainLayout.module.css';
@@ -21,9 +21,6 @@ const MainLayout = () => {
                         </div>
                     </div>
 
-                    <div>
-                        <SearchForm/>
-                    </div>
 
                     <div className={css.usertitle}>
                         <div className={css.userlogo}>
