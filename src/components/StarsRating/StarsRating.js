@@ -10,8 +10,8 @@ function StarsRating({vote_average}) {
                     starRatedColor="#FFD700"
                     starEmtyColor="#999999"
                     starHoverColor="#FFD700"
-                    starSpacing="5px"
-                    starDimension="15px"
+                    starSpacing="3px"
+                    starDimension="13px"
                     numberOfStars={10}
                     changeRating={null}
                     name={'rating'}

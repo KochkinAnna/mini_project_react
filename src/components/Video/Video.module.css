@@ -1,0 +1,6 @@
+.Video{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    background: #021c3d;
+}

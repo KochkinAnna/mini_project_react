@@ -1,10 +1,16 @@
-import {Header, SearchBar, UserInfo} from "../../components";
-import {Outlet} from "react-router-dom";
-
+import {Header, UserInfo} from "../../components";
+import {Link, Outlet} from "react-router-dom";
 import css from './MainLayout.module.css';
-import {useState} from "react";
-import {moviesService} from "../../services";
+import * as PropTypes from "prop-types";
 
+function Navink(props) {
+    return null;
+}
+
+Navink.propTypes = {
+    to: PropTypes.string,
+    children: PropTypes.node
+};
 const MainLayout = () => {
 
     return (
@@ -19,10 +25,9 @@ const MainLayout = () => {
                                  alt={'bird_logo'}/>
                         </div>
                         <div className={css.owufilm}>
-                            <b>OWU FILMS</b>
+                            <Link to={''}><b>OWU FILMS</b></Link>
                         </div>
                     </div>
-
 
                     <div className={css.usertitle}>
                         <div className={css.userlogo}>

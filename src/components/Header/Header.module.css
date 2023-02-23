@@ -1,10 +1,14 @@
 .Header {
     height: 50px;
     background: cornflowerblue;
+    border: 1px solid #0d2564;
+    border-left: none;
+    border-right: none;
     display: flex;
     box-sizing: border-box;
-    justify-content: space-around;
+    justify-content: flex-start;
     align-items: center;
+    padding-left: 200px;
 }
 
 .Header a{

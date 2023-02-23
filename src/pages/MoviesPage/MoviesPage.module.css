@@ -9,4 +9,24 @@
 
 .MoviesList{
     width: 89%;
+    margin-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.input{
+    display: flex;
+    justify-content: end;
+    box-sizing: border-box;
+    margin: 10px;
+}
+
+.buttoninput{
+    background: #d4f506;
+    border-color: cornflowerblue;
+    margin-left: 0;
+}
+
+.Search{
 }
