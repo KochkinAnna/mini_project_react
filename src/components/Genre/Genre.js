@@ -6,7 +6,7 @@ const Genre = ({genre}) => {
 
     return (
         <div className={css.Genre}>
-            <button  className={css.butt}><b>{name}</b></button>
+            <button className={css.butt}><b>{name}</b></button>
 
         </div>
     );

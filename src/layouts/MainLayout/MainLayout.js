@@ -2,6 +2,8 @@ import {Header, SearchBar, UserInfo} from "../../components";
 import {Outlet} from "react-router-dom";
 
 import css from './MainLayout.module.css';
+import {useState} from "react";
+import {moviesService} from "../../services";
 
 const MainLayout = () => {
 
@@ -20,6 +22,7 @@ const MainLayout = () => {
                             <b>OWU FILMS</b>
                         </div>
                     </div>
+
 
                     <div className={css.usertitle}>
                         <div className={css.userlogo}>

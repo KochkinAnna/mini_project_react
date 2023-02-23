@@ -20,7 +20,7 @@ const MoviesListCard = ({movie}) => {
     const {id, original_title, poster_path, vote_average, genre_ids} = movie;
 
     return (
-        <Link to={`${id}`}>
+        <Link to={`/movie/${id}`}>
             <div className={css.MovieListCard}>
 
                 <div className={css.container}>
