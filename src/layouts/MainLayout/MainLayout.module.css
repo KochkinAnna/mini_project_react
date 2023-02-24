@@ -4,17 +4,12 @@ html {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-}
-
-
-.MainLayout {
-    width: 80%;
-    height: 100%;
+    padding-left: 10%;
     margin-top: 50px;
     margin-bottom: 50px;
+}
+
+.MainLayout {
     border: 1px solid black;
     display: flex;
     flex-direction: column;
