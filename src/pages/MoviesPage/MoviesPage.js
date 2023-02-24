@@ -3,6 +3,7 @@ import {Genres, MoviesList, MoviesListCard} from "../../components";
 import css from './MoviesPage.module.css';
 import {useState} from "react";
 import {moviesService} from "../../services";
+import {useLocation} from "react-router-dom";
 
 
 const MoviesPage = () => {
@@ -10,7 +11,6 @@ const MoviesPage = () => {
 
     const [searchKey, setSearchKey] = useState('')
     const [movies, setMovies] = useState([])
-
 
     const searchMovies = async (e) => {
         e.preventDefault();
@@ -22,6 +22,7 @@ const MoviesPage = () => {
             console.log(error)
         }
     }
+
 
     return (
         <div className={css.MoviesPage}>

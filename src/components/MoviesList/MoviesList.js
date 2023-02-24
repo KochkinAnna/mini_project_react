@@ -4,8 +4,7 @@ import {MoviesListCard} from "../MoviesListCard/MoviesListCard";
 import {moviesActions} from "../../redux";
 
 import css from './MovieList.module.css'
-import {useSearchParams} from "react-router-dom";
-import {moviesService} from "../../services";
+import {useLocation, useSearchParams} from "react-router-dom";
 
 const MoviesList = () => {
 
@@ -13,6 +12,11 @@ const MoviesList = () => {
 
     const {movies, page, errors, loading} = useSelector(state => state.movies);
 
+    const genre = useLocation().pathname.slice(7);
+    console.log(genre)
+
+    const filtredGenredFilms = movies && movies.filter(m=> m.genre_ids.includes(Number(genre)))
+    console.log(filtredGenredFilms)
 
     const [query, setQuery] = useSearchParams({page: '1'});
 
@@ -29,7 +33,11 @@ const MoviesList = () => {
 
             <div className={css.column}>
                 <div className={css.Movies}>
-                    {movies.map(movie => <MoviesListCard key={movie.id} movie={movie}/>)}
+                    {
+                        genre!==''&&
+                        filtredGenredFilms.map(movie=> <MoviesListCard key={movie.id} movie={movie}/>)
+                        || movies.map(movie => <MoviesListCard key={movie.id} movie={movie}/>)
+                    }
                 </div>
 
                 <div className={css.pagination}>

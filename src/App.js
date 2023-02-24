@@ -9,6 +9,7 @@ const App = () => {
                 <Route path={'/'} element={<MainLayout/>}>
                     <Route index element={<MoviesPage/>}/>
                     <Route path={'movie/:movieId'} element={<MoviePage/>}/>
+                    <Route path={'genre/:genreId'} element={<MoviesPage/>}/>
                 </Route>
                 <Route path={'*'} element={<NotFoundPage/>}/>
             </Routes>
