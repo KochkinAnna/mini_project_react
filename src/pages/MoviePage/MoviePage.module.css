@@ -1,20 +1,20 @@
-.MoviePage{
-    display: flex;
-    justify-content: space-evenly;
-    flex-direction: column;
-}
-
-.info{
+.info {
     display: flex;
     justify-content: space-evenly;
     flex-direction: row;
     margin: 20px;
 }
 
-.MovieInfo{
+.MovieInfo {
     margin-left: 20px;
 }
 
-.Video{
+.MoviePage {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.Video {
     margin-left: 20px;
 }

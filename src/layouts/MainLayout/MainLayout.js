@@ -1,21 +1,15 @@
-import {Header, UserInfo} from "../../components";
 import {Link, Outlet} from "react-router-dom";
+
+import {Header, UserInfo} from "../../components";
+
 import css from './MainLayout.module.css';
-import * as PropTypes from "prop-types";
 
-function Navink(props) {
-    return null;
-}
-
-Navink.propTypes = {
-    to: PropTypes.string,
-    children: PropTypes.node
-};
 const MainLayout = () => {
 
     return (
 
         <div className={css.MainLayout}>
+
             <div className={css.background}>
 
                 <div className={css.top}>
@@ -44,6 +38,7 @@ const MainLayout = () => {
                     <Header/>
                     <Outlet/>
                 </div>
+
             </div>
         </div>
     );

@@ -1,12 +1,16 @@
-import {MovieInfo, PosterPreview, Videos} from "../../components";
 import {useParams} from "react-router-dom";
+
+import {MovieInfo, PosterPreview, Videos} from "../../components";
 
 import css from './MoviePage.module.css'
 
 const MoviePage = () => {
+
     const {movieId} = useParams();
+
     return (
         <div className={css.MoviePage}>
+
             <div className={css.info}>
                 <div>
                     <PosterPreview movieId={movieId}/>
@@ -15,7 +19,9 @@ const MoviePage = () => {
                     <MovieInfo movieId={movieId}/>
                 </div>
             </div>
-                <Videos movieId={movieId}/>
+
+            <Videos movieId={movieId}/>
+
         </div>
     );
 };

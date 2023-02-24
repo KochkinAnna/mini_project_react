@@ -1,14 +1,14 @@
-.GenreBadge{
+.GenreBadge {
     display: flex;
     box-sizing: border-box;
     flex-wrap: wrap;
     justify-content: end;
 }
 
-.name{
+.name {
     background: cornflowerblue;
     color: black;
-    border:1px solid #d4f506;
+    border: 1px solid #d4f506;
     margin-bottom: 5px;
     text-decoration: none;
     padding: 2px;

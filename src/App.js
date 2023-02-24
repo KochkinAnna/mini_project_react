@@ -1,6 +1,9 @@
 import {Route, Routes} from "react-router-dom";
-import {MoviePage, MoviesPage, NotFoundPage} from "./pages";
+
 import {MainLayout} from "./layouts";
+
+import {MoviePage, MoviesPage, NotFoundPage} from "./pages";
+
 
 const App = () => {
     return (

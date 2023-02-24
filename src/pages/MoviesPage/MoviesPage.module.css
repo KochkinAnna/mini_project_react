@@ -1,32 +1,29 @@
-.MoviesPage{
-    display: flex;
-    box-sizing: border-box;
+.buttoninput {
+    background: #d4f506;
+    border-color: cornflowerblue;
+    margin-left: 0;
 }
 
-.Genres{
-    width: 10%;
-}
-
-.MoviesList{
-    width: 89%;
-    margin-left: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.input{
+.input {
     display: flex;
     justify-content: end;
     box-sizing: border-box;
     margin: 10px;
 }
 
-.buttoninput{
-    background: #d4f506;
-    border-color: cornflowerblue;
-    margin-left: 0;
+.Genres {
+    width: 10%;
 }
 
-.Search{
+.MoviesList {
+    width: 90%;
+    margin-left: 65px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.MoviesPage {
+    display: flex;
+    box-sizing: border-box;
 }

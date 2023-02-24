@@ -1,4 +1,5 @@
 import {useEffect, useState} from "react";
+
 import {moviesService} from "../../services";
 
 import css from './MovieInfo.module.css'
@@ -10,7 +11,6 @@ const MovieInfo = ({movieId}) => {
     useEffect(() => {
         moviesService.getById(movieId).then(({data}) => setMovie(data))
     }, [movieId])
-
 
     if (movie) {
         return (

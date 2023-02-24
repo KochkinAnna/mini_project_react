@@ -1,10 +1,12 @@
-import {useEffect, useState} from "react";
+import {useEffect} from "react";
 import {useDispatch, useSelector} from "react-redux";
-import {MoviesListCard} from "../MoviesListCard/MoviesListCard";
+import {useLocation, useSearchParams} from "react-router-dom";
+
 import {moviesActions} from "../../redux";
 
+import {MoviesListCard} from "../MoviesListCard/MoviesListCard";
+
 import css from './MovieList.module.css'
-import {useLocation, useSearchParams} from "react-router-dom";
 
 const MoviesList = () => {
 
@@ -15,7 +17,7 @@ const MoviesList = () => {
     const genre = useLocation().pathname.slice(7);
     console.log(genre)
 
-    const filtredGenredFilms = movies && movies.filter(m=> m.genre_ids.includes(Number(genre)))
+    const filtredGenredFilms = movies && movies.filter(m => m.genre_ids.includes(Number(genre)))
     console.log(filtredGenredFilms)
 
     const [query, setQuery] = useSearchParams({page: '1'});
@@ -34,8 +36,8 @@ const MoviesList = () => {
             <div className={css.column}>
                 <div className={css.Movies}>
                     {
-                        genre!==''&&
-                        filtredGenredFilms.map(movie=> <MoviesListCard key={movie.id} movie={movie}/>)
+                        genre !== '' &&
+                        filtredGenredFilms.map(movie => <MoviesListCard key={movie.id} movie={movie}/>)
                         || movies.map(movie => <MoviesListCard key={movie.id} movie={movie}/>)
                     }
                 </div>

@@ -1,5 +1,7 @@
-import {moviesBaseURL} from "../configs";
 import axios from "axios";
+
+import {moviesBaseURL} from "../configs";
+
 
 const apiService = axios.create({baseURL: moviesBaseURL});
 

@@ -1,3 +1,19 @@
+button {
+    margin-left: 20px;
+    margin-right: 20px;
+    background: #d4f506;
+    border-color: cornflowerblue;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.loading {
+    display: flex;
+    justify-content: center;
+}
 
 .Movies {
     display: flex;
@@ -7,25 +23,9 @@
     height: 100%;
 }
 
-.column{
-    display: flex;
-    flex-direction: column;
-}
-.loading{
-    display: flex;
-    justify-content: center;
-}
-
 .pagination {
     display: flex;
     box-sizing: border-box;
     justify-content: center;
     margin-bottom: 50px;
-}
-
-button {
-    margin-left: 20px;
-    margin-right: 20px;
-    background: #d4f506;
-    border-color: cornflowerblue;
 }

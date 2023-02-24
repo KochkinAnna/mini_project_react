@@ -1,23 +1,26 @@
 import {useEffect, useState} from "react";
+
 import {moviesService} from "../../services";
+
 import {Video} from "../Video/Video";
 
 const Videos = ({movieId}) => {
 
-    const[videos,setVideos] = useState([]);
+    const [videos, setVideos] = useState([]);
 
-    useEffect(()=> {
+    useEffect(() => {
         moviesService.getVideoById(movieId).then(({data}) => {
             setVideos(data.results)
-        })}, [movieId])
+        })
+    }, [movieId])
 
-    const filtredVideos=videos.filter((video)=>video.type ==='Trailer')
+    const filtredVideos = videos.filter((video) => video.type === 'Trailer')
 
-        return (
-            <div>
-                {filtredVideos.map(video=><Video key={video.id} video={video}/>)}
-            </div>
-        );
-    }
+    return (
+        <div>
+            {filtredVideos.map(video => <Video key={video.id} video={video}/>)}
+        </div>
+    );
+}
 
 export {Videos};
