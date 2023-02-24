@@ -4,9 +4,13 @@ html {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
+    display: flex;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
-.background {
+
+.MainLayout {
     width: 80%;
     height: 100%;
     margin-top: 50px;
@@ -18,18 +22,17 @@ html {
     background: snow;
 }
 
-.MainLayout {
-    display: flex;
-    box-sizing: border-box;
-    justify-content: center;
-}
-
 .owufilm {
     text-align: center;
     font-size: 30px;
     color: #75603d;
     padding-top: 22px;
     text-decoration: none;
+}
+
+.toggle {
+    margin-top: 40px;
+    margin-left: 300px;
 }
 
 .top {

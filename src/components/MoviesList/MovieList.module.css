@@ -8,11 +8,13 @@ button {
 .column {
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .loading {
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
 }
 
 .Movies {

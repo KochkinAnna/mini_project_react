@@ -15,10 +15,8 @@ const MoviesList = () => {
     const {movies, page, errors, loading} = useSelector(state => state.movies);
 
     const genre = useLocation().pathname.slice(7);
-    console.log(genre)
 
     const filtredGenredFilms = movies && movies.filter(m => m.genre_ids.includes(Number(genre)))
-    console.log(filtredGenredFilms)
 
     const [query, setQuery] = useSearchParams({page: '1'});
 

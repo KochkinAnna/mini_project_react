@@ -1,6 +1,6 @@
 import {Link, Outlet} from "react-router-dom";
 
-import {Header, UserInfo} from "../../components";
+import {Header, ToggleDarkMode, UserInfo} from "../../components";
 
 import css from './MainLayout.module.css';
 
@@ -8,9 +8,9 @@ const MainLayout = () => {
 
     return (
 
-        <div className={css.MainLayout}>
+        <div>
 
-            <div className={css.background}>
+            <div className={css.MainLayout}>
 
                 <div className={css.top}>
                     <div className={css.webtitle}>
@@ -21,6 +21,10 @@ const MainLayout = () => {
                         <div className={css.owufilm}>
                             <Link to={''}><b>OWU FILMS</b></Link>
                         </div>
+                    </div>
+
+                    <div className={css.toggle}>
+                        <ToggleDarkMode/>
                     </div>
 
                     <div className={css.usertitle}>

@@ -1,0 +1,10 @@
+.dark {
+    width: 80%;
+   background-color: #18243e;
+    color: #fff;
+}
+.light {
+    width: 80%;
+    background-color: #fff;
+    color: #333;
+}
